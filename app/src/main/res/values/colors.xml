@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Primary - Espresso Brown -->
+    <color name="primary_espresso">#3E2723</color>
+    <color name="primary_espresso_dark">#211512</color>
+    <color name="primary_espresso_light">#5D4037</color>
+
+    <!-- Accent - Warm Caramel -->
+    <color name="accent_caramel">#C67C38</color>
+    <color name="accent_caramel_light">#F5E8DC</color>
+    <color name="accent_caramel_dark">#A05D20</color>
+
+    <!-- Secondary Accent - Muted Sage -->
+    <color name="accent_sage">#6B8E70</color>
+    <color name="accent_sage_light">#EAF2EB</color>
+
+    <!-- Backgrounds & Surfaces -->
+    <color name="bg_cream">#FDFBF7</color>
+    <color name="bg_cream_dark">#F4EFE6</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Typography Colors -->
+    <color name="text_primary">#211915</color>
+    <color name="text_secondary">#6E6259</color>
+    <color name="text_muted">#A0958D</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Structural & UI Elements -->
+    <color name="divider_color">#EAE3D9</color>
+    <color name="card_stroke">#E6DFD5</color>
+    <color name="chip_selected_bg">#3E2723</color>
+    <color name="chip_unselected_bg">#EFE9E0</color>
+    <color name="badge_red">#D32F2F</color>
+
+    <!-- Status / Feedback -->
+    <color name="success_green">#2E7D32</color>
+    <color name="rating_gold">#FFB300</color>
+</resources>

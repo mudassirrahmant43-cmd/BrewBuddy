@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Americano Mug -->
+    <path android:pathData="M22,32 L74,32 L69,76 C68,81 63,85 57,85 L39,85 C33,85 28,81 27,76 Z" android:fillColor="#5D4037"/>
+    <path android:pathData="M73,38 C81,38 86,44 86,52 C86,60 80,66 72,66" android:strokeWidth="4.5" android:strokeColor="#5D4037" android:strokeLineCap="round"/>
+    <!-- Dark Coffee Surface -->
+    <path android:pathData="M24,36 C32,40 40,35 48,38 C56,41 64,36 72,36 L70,44 L26,44 Z" android:fillColor="#211512"/>
+    <!-- Steam -->
+    <path android:pathData="M36,24 C34,18 39,14 38,10" android:strokeWidth="2.5" android:strokeColor="#C67C38" android:strokeLineCap="round"/>
+    <path android:pathData="M48,22 C46,16 51,12 50,8" android:strokeWidth="3" android:strokeColor="#EAE3D9" android:strokeLineCap="round"/>
+    <path android:pathData="M60,24 C58,18 63,14 62,10" android:strokeWidth="2.5" android:strokeColor="#C67C38" android:strokeLineCap="round"/>
+</vector>

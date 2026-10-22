@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    style="@style/Widget.BrewBuddy.Card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_coffee"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                tools:src="@drawable/ic_coffee_latte" />
+
+            <TextView
+                android:id="@+id/tv_category_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_badge"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/primary_espresso"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="HOT" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_coffee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Caffè Latte" />
+
+        <TextView
+            android:id="@+id/tv_coffee_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            tools:text="Silky steamed milk poured gently over double espresso." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tv_coffee_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/PriceTextStyle"
+                tools:text="$4.75" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_customize"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:paddingHorizontal="12dp"
+                android:text="@string/customize"
+                android:textSize="12sp"
+                style="@style/Widget.BrewBuddy.Button.Primary" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

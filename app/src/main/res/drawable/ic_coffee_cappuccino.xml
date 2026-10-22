@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Cappuccino Wide Cup -->
+    <path android:pathData="M18,38 L78,38 L72,76 C71,81 65,85 58,85 L38,85 C31,85 25,81 24,76 Z" android:fillColor="#C67C38"/>
+    <path android:pathData="M77,42 C85,42 90,48 90,56 C90,64 83,70 75,70" android:strokeWidth="4.5" android:strokeColor="#C67C38" android:strokeLineCap="round"/>
+    <!-- Fluffy Foam Dome -->
+    <path android:pathData="M20,38 C20,26 32,20 48,20 C64,20 76,26 76,38 Z" android:fillColor="#FAF7F2"/>
+    <!-- Cocoa Dusting / Latte Art Leaf -->
+    <path android:pathData="M48,24 C44,30 40,32 48,36 C56,32 52,30 48,24 Z" android:fillColor="#3E2723"/>
+    <!-- Saucer -->
+    <path android:pathData="M12,86 L84,86 L84,90 L12,90 Z" android:fillColor="#5D4037"/>
+</vector>

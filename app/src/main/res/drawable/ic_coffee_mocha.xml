@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Tall Glass / Mug -->
+    <path android:pathData="M26,28 L70,28 L64,82 C63,86 58,89 52,89 L44,89 C38,89 33,86 32,82 Z" android:fillColor="#3E2723"/>
+    <!-- Chocolate Drizzle Base -->
+    <path android:pathData="M31,70 L65,70 L64,82 C63,85 59,87 53,87 L43,87 C37,87 33,85 32,82 Z" android:fillColor="#211512"/>
+    <!-- Whipped Cream Swirl -->
+    <path android:pathData="M28,28 C28,16 38,10 48,10 C58,10 68,16 68,28 Z" android:fillColor="#FAF7F2"/>
+    <!-- Chocolate Drizzle Zigzag -->
+    <path android:pathData="M36,18 Q42,12 48,18 T60,18" android:strokeWidth="3" android:strokeColor="#211512" android:strokeLineCap="round"/>
+</vector>

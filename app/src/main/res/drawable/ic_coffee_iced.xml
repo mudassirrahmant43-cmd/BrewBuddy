@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Clear Iced Cup -->
+    <path android:pathData="M24,20 L72,20 L64,84 C63,88 58,91 52,91 L44,91 C38,91 33,88 32,84 Z" android:fillColor="#5D4037"/>
+    <!-- Clear Lid -->
+    <path android:pathData="M20,16 L76,16 C78,16 80,18 78,20 L18,20 C16,18 18,16 20,16 Z" android:fillColor="#EAE3D9"/>
+    <!-- Straw -->
+    <path android:pathData="M56,8 L68,88" android:strokeWidth="4" android:strokeColor="#C67C38" android:strokeLineCap="round"/>
+    <!-- Ice Cubes inside -->
+    <path android:pathData="M34,34 L46,34 L46,46 L34,46 Z" android:fillColor="#FAF7F2" android:fillAlpha="0.7"/>
+    <path android:pathData="M50,42 L62,42 L62,54 L50,54 Z" android:fillColor="#FAF7F2" android:fillAlpha="0.7"/>
+    <path android:pathData="M36,56 L48,56 L48,68 L36,68 Z" android:fillColor="#FAF7F2" android:fillAlpha="0.7"/>
+</vector>

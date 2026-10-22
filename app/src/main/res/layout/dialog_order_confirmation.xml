@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_check_circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_order_confirmed"
+        style="@style/HeaderTextStyle"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_order_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_badge"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:textColor="@color/primary_espresso"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="Order Reference: #BB-8392" />
+
+    <TextView
+        android:id="@+id/tv_order_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        tools:text="Thank you, Amy! Your order has been sent to our baristas. Estimated pick up time is 12 minutes." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_back_home"
+        style="@style/Widget.BrewBuddy.Button.Primary" />
+
+</LinearLayout>

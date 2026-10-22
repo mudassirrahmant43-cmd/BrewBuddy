@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    style="@style/Widget.BrewBuddy.Card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/img_cart_item"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            tools:src="@drawable/ic_coffee_latte" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_cart_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/btn_remove_item"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:text="Caffè Latte" />
+
+                <ImageButton
+                    android:id="@+id/btn_remove_item"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/remove"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/text_muted" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_cart_item_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="Medium • Iced\nExtras: Extra Shot, Vanilla" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_cart_item_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/PriceTextStyle"
+                    android:textSize="16sp"
+                    tools:text="$6.25" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_decrement_qty"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_circle_button"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_remove"
+                        app:tint="@color/primary_espresso" />
+
+                    <TextView
+                        android:id="@+id/tv_cart_item_qty"
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/text_primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:text="2" />
+
+                    <ImageButton
+                        android:id="@+id/btn_increment_qty"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_circle_button"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_add"
+                        app:tint="@color/primary_espresso" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

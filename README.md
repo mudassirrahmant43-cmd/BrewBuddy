@@ -1,67 +1,105 @@
-# Deprecated Repository
-The associated Nanodegree program **Android Basics Nanodegree by Google** ND803 is deprecated now; therefore, this repository is also deprecated. 
+# BrewBuddy — Specialty Coffee Ordering App
 
-# Archival Note
-We are archiving this repository because we do not want learners to push personal development to the current repository. If you have any issues or suggestions to make, feel free to:
-- Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues.
-- Submit a support ticket along with the link to your forked repository if (learners are) blocked for other reasons. Here are the links for the [retail consumers](https://udacity.zendesk.com/hc/en-us/requests/new) and [enterprise learners](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131). 
+> *"Your coffee. Your moment."*
 
+**BrewBuddy** is a modern, native Android application designed for coffee lovers to discover artisanal drinks, customize every detail of their order, manage a real-time shopping cart, and submit orders smoothly.
 
-Just Java Sample App
-===================================
+---
 
-This app displays an order form for coffee. Used in the Udacity Android for Beginners course. This is how the app would look like after build and running:
+## ☕ Key Features
 
-<img width="427" alt="Screenshot 2022-02-08 at 7 31 06 PM" src="https://user-images.githubusercontent.com/48475411/153139969-147b5add-010f-436b-80cb-fe24a1a9e561.png">
+### 1. **Home Screen**
+- **Branded Welcome Header**: Warm personalized greeting and BrewBuddy logo.
+- **Featured Brew Card**: Highlighted seasonal beverage (*Artisanal Cold Brew*) with instant customization and ordering.
+- **Popular Coffee Grid**: Quick view of top-rated specialty drinks.
+- **Direct Navigation**: Seamless shortcut to explore the complete coffee menu.
 
+### 2. **Interactive Coffee Menu**
+- **8 Artisanal Coffee Offerings**: Classic Espresso, Caffè Americano, Velvet Cappuccino, Caffè Latte, Dark Chocolate Mocha, Caramel Cloud Latte, Iced Coffee, and Artisanal Cold Brew.
+- **Live Category Filters**: Filter drinks in real-time by *All Coffee*, *Hot Coffee*, *Iced Coffee*, and *Specialty*.
 
-Pre-requisites
---------------
-- Android Studio 3.2.1 or higher
-- compileSdkVersion 31
-- targetSdkVersion 31
-- minSdkVersion 21
-- Supports up to Android 12
-- Gradle 7.2.0
+### 3. **Drink Customization**
+- **Temperature Control**: Choose between Hot and Iced preparation.
+- **Size Options**: Small, Medium (+$0.50), and Large (+$1.00).
+- **Add-ons & Extras**: Extra Espresso Shot (+$1.00), Vanilla Syrup (+$0.50), Caramel Drizzle (+$0.50), Whipped Cream (+$0.75), Chocolate Topping (+$0.50).
+- **Quantity Adjuster**: Flexible quantity controls (1-10) with live price calculation before adding to cart.
 
-Getting Started
----------------
+### 4. **Real-time Shopping Cart**
+- **Distinct Configurations**: Prevents incorrect merging by grouping unique drink customizations separately.
+- **Item Controls**: Adjust quantities directly or remove items.
+- **Price Breakdown**: Displays subtotal, estimated tax (8%), and grand total.
+- **Empty State**: Friendly illustration and call-to-action when cart is empty.
+- **Cart Badge**: Live item count badge on bottom navigation tab.
 
-To run app in an Android Virtual Device (AVD), we have used the following configuration:
-- Pixel 4 Mobile device with x86 System image
-- API level 30
-- Android 11
+### 5. **Checkout & Order Confirmation**
+- **Customer Details**: Validates customer name input.
+- **Pickup Method**: In-Store Collection vs. Curbside Pickup options.
+- **Order Confirmation**: Generates a unique reference code (`#BB-XXXX`) with pickup timing estimate and clears cart upon confirmation.
 
-Support
--------
+### 6. **Profile & Settings**
+- **Store Info**: Highlights favorite café location and operating details.
+- **App Preferences**: Order notifications, default payment preference, and theme settings.
+- **About & Attribution**: Credits original project history and licensing.
 
-The Android Studio build system depends on Gradle and its plugins. The Gradle and its plugins have to be updated separately of Android Studio.
-For the updated version, refer to the following updated files:
-~/build.gradle (project) file
-~/app/build.gradle(: app) file
-~/gradle/wrapper/gradle-wrapper.properties file
-You can refer anytime to the latest [Android Gradle plugin release notes](https://developer.android.com/studio/releases/gradle-plugin) for the newest version of plugins.
+---
 
+## 🎨 Visual Identity & Palette
 
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
+Designed with an independent specialty coffee shop aesthetic:
+- **Espresso Brown** (`#3E2723`): Primary brand color and app bar accent.
+- **Warm Caramel** (`#C67C38`): Primary actions, highlights, and badge accents.
+- **Muted Sage** (`#6B8E70`): Secondary accents.
+- **Warm Cream** (`#FAF7F2`): Screen background for high contrast and readability.
 
-License
--------
+---
+
+## 🛠 Tech Stack & Requirements
+
+- **Language**: 100% Native Java
+- **UI Architecture**: Android XML Layouts, Material Components (M3/M2), BottomNavigationView, BottomSheetDialogFragment, RecyclerView, CardView, ChipGroup.
+- **Minimum SDK**: API 21 (Android 5.0)
+- **Compile SDK / Target SDK**: API 31 (Android 12)
+- **Gradle**: 7.3.3 / Android Gradle Plugin 7.2.2
+- **Java Version**: JDK 1.8
+
+---
+
+## 🚀 Building and Running
+
+### Build Debug APK
+- **On Windows**:
+  ```cmd
+  gradlew.bat assembleDebug
+  ```
+- **On macOS / Linux**:
+  ```bash
+  ./gradlew assembleDebug
+  ```
+
+### Run Unit Tests
+```cmd
+gradlew.bat testDebugUnitTest
+```
+
+The generated debug APK will be located at:
+`app/build/outputs/apk/debug/app-debug.apk`
+
+---
+
+## 📜 Attribution & License
+
+This application was transformed from the original open-source **Just Java** sample app created for the Udacity Android for Beginners course.
 
 Copyright 2015 The Android Open Source Project, Inc.
 
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

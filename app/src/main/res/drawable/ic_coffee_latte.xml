@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Glass Latte Mug -->
+    <path android:pathData="M26,24 L70,24 L65,80 C64,85 59,88 53,88 L43,88 C37,88 32,85 31,80 Z" android:fillColor="#F5E8DC"/>
+    <!-- Espresso Layer -->
+    <path android:pathData="M28,48 L68,48 L66,66 L30,66 Z" android:fillColor="#3E2723"/>
+    <!-- Milk Layer Base -->
+    <path android:pathData="M30,66 L66,66 L65,80 C64,83 60,86 54,86 L42,86 C36,86 32,83 31,80 Z" android:fillColor="#FAF7F2"/>
+    <!-- Foam Layer Top -->
+    <path android:pathData="M26,24 L70,24 L69,32 L27,32 Z" android:fillColor="#FAF7F2"/>
+    <!-- Latte Art Heart -->
+    <path android:pathData="M48,30 C48,30 43,26 43,23 C43,21.5 44.5,20 46,20 C47,20 47.7,20.5 48,21.3 C48.3,20.5 49,20 50,20 C51.5,20 53,21.5 53,23 C53,26 48,30 48,30 Z" android:fillColor="#C67C38"/>
+</vector>
